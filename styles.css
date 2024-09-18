@@ -1,0 +1,99 @@
+/* Dropdown Styling */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    position: relative;
+}
+
+nav ul li a {
+    color: #fff; /* White text for navigation links */
+    text-decoration: none;
+    padding: 1rem;
+    display: block;
+}
+
+nav ul li:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333; /* Dark background for dropdown */
+    min-width: 200px;
+    z-index: 1;
+    top: 100%; /* Position dropdown directly below the parent item */
+    left: 0; /* Align dropdown with the left edge of the parent item */
+}
+
+.dropdown-content li {
+    display: block;
+}
+
+.dropdown-content li a {
+    padding: 1rem;
+    text-align: left;
+    color: #fff; /* White text inside dropdown */
+    text-decoration: none;
+}
+
+.dropdown-content li a:hover {
+    background-color: #444; /* Darker background on hover */
+}
+
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Light background for body */
+    color: #333; /* Dark text color for general readability */
+}
+
+/* Header Styling */
+header {
+    background-color: #333; /* Dark background for header */
+    color: #fff; /* White text for header */
+    padding: 1rem 0;
+    text-align: center;
+}
+
+/* Main Content Styling */
+main {
+    padding: 2rem;
+    padding-bottom: 4rem; /* Add extra padding to avoid the footer overlap */
+    background-color: #fff; /* White background for main content */
+    color: #333; /* Dark text color for main content */
+}
+
+
+section {
+    margin-bottom: 2rem;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333; /* Dark background for footer */
+    color: #fff; /* White text for footer */
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Hide all sections except the current one */
+section.hidden {
+    display: none;
+}
+
+/* Show the active section */
+section.active {
+    display: block;
+}
+
