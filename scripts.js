@@ -289,30 +289,40 @@ int main() {
 #include <iostream>
 using namespace std;
 
-void afisareChenar(int mat[][100], int m, int n) {
+void afisareChenar(int mat[][100], int n) {
     cout << "Chenarul matricei este: " << endl;
-    for (int j = 0; j < n; j++) {
-        cout << mat[0][j] << " ";
-    }
-    for (int i = 1; i < m - 1; i++) {
-        cout << mat[i][n-1] << " ";
-    }
-    for (int j = n - 1; j >= 0; j--) {
-        cout << mat[m-1][j] << " ";
-    }
-    for (int i = m - 2; i > 0; i--) {
-        cout << mat[i][0] << " ";
-    }
+    for(i=1;i<=n;i++)
+      for(j=1;j<=n;j++)
+        if(i>j && i+j<n-1)
+          cout<<v[i][j]<<' ';
+    cout<<endl;
+
+    for(i=1;i<=n;i++)
+      for(j=1;j<=n;j++)
+        if(i<j && i+j<n-1)
+          cout<<v[i][j]<<' ';
+    cout<<endl;
+    
+    for(i=1;i<=n;i++)
+      for(j=1;j<=n;j++)
+        if(i<j && i+j>n-1)
+          cout<<v[i][j]<<' ';
+    cout << endl;
+
+    for(i=1;i<=n;i++)
+      for(j=1;j<=n;j++)
+        if(i>j && i+j>n-1)
+          cout<<v[i][j]<<' ';
     cout << endl;
 }
 
 int main() {
     int m, n;
     cout << "Introduceți numărul de linii și coloane: ";
-    cin >> m >> n;
+    cin >> n;
     int mat[100][100];
     cout << "Introduceți elementele matricei: " << endl;
-    for (int i = 0; i < m; i++) {
+    for (int i = 0; i < n; i++) {
         for (int j = 0; j < n; j++) {
             cin >> mat[i][j];
         }
