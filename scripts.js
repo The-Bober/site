@@ -23,13 +23,37 @@ int sumaCifrelor(int n) {
     return suma;
 }
 
-int main() {
-    int numar;
-    cout << "Introduceți un număr: ";
-    cin >> numar;
-    cout << "Suma cifrelor este: " << sumaCifrelor(numar) << endl;
-    return 0;
+int cifraMaxima(int n)
+{
+    int max = -1;
+    while(n)
+    {
+        if(n%10>max)max = n%10;
+        n /= 10;
+    }
+    return max;
 }
+
+int Oglinditul(int n)
+{
+    int ogl = 0;
+    while(n)
+    {
+        ogl = ogl*10+n%10;
+        n /= 10;
+    }
+    return ogl;
+}
+
+int primaCifra(int n)
+{
+    while(n>10)
+    {
+        n/=10;
+    }
+    return n;
+}
+
         </code></pre>
     `,
     divizori: `<h3>Divizorii unui număr</h3><p>Descriere și cod pentru afișarea divizorilor unui număr:</p>
