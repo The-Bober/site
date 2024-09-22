@@ -742,6 +742,16 @@ void genMatRand(int rows, int cols, int matrix[][10]) {
     }
 }</code></pre>`,
     problems:`<p>
+    <a href = "https://infoas.ro/problema/diagonala-principala">diagonala-principala</a>
+    <p></p>
+    <a href = "https://infoas.ro/problema/generare-tabla-de-sah">generare-tabla-de-sah</a>
+    <p></p>
+    <a href = "https://infoas.ro/problema/intersectia-multimilor">intersectia-multimilor</a>
+    <p></p>
+    <a href = "https://infoas.ro/problema/interclasare-a-trei-siruri">interclasare-a-trei-siruri</a>
+    <p></p>
+    <a href = "https://infoas.ro/problema/functie-suma">functie-suma</a>
+    <p></p>
     </p>`,
     documentatie:`
     <h3>Prezentarea posibilelor îmbunătățiri a site-ului și prezentare a codului important</h3>
